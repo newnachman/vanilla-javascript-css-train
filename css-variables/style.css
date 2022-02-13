@@ -1,0 +1,60 @@
+
+
+:root {
+  /* --theme: rgb(48, 47, 47); */
+  --theme: white;
+  --general-div: 'black';
+	--bgc: grey;
+	--bgc-child: red;
+}
+
+body {
+  background-color: var(--theme);
+}
+
+div, section {
+  margin: 0 30px;
+}
+
+.wrp {
+  padding: 5px;
+}
+
+.divider {
+  margin: 70px 0 30px 60px;
+  font-size: 3rem;
+}
+
+.simple-variable-use  {
+	background-color: var(--bgc);
+}
+.div2 {
+	background-color: var(--bgc-child);
+}
+
+.override-variable-use {
+  --bgc: blue;
+  background-color: var(--bgc);
+}
+
+.fall-back-variable-use {
+  background-color: var(--special-bgc, violet);
+}
+
+button {
+  padding: 20px;
+  margin: 20px;
+  font-size: 2rem;
+}
+
+button#dark {
+  background-color: black;
+  color: white;
+}
+
+button#light {
+  background-color: white;
+  color: black;
+}
+
+
