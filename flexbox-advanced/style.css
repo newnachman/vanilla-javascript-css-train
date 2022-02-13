@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+/* Working with width of items inside a container: */
+
+/* flex-basis */
+
+.flex-container0 {
+  border: 1px solid grey;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.flex-container0 .item {
+  flex-basis: 100px;
+  min-height: 100px;
+  background-color: #254de4;
+  margin: 10px;
+}
+
+.flex-container0 .item:nth-of-type(1) {
+  
+}
+.flex-container0 .item:nth-of-type(2) {
+  flex-basis: 400px;
+}
+.flex-container0 .item:nth-of-type(3) {
+  
+}
+
+/*  flex-grow */
+
+.flex-container1 {
+  border: 1px solid grey;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.flex-container1 .item {
+  flex-basis: 100px;
+  min-height: 100px;
+  background-color: #254de4;
+  margin: 10px;
+}
+
+.flex-container1 .item:nth-of-type(1) {
+  flex-grow: 1;
+}
+.flex-container1 .item:nth-of-type(2) {
+  flex-grow: 4;
+}
+.flex-container1 .item:nth-of-type(3) {
+  flex-grow: 1;
+}
+
+
+/*  flex */
+
+.flex-container2 {
+  border: 1px solid grey;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.flex-container2 .item {
+  min-height: 100px;
+  background-color: #254de4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  /*? short-hand for:  1 -> flex-grow: 1;   0 -> flex-shrink: 0;   100px -> flex-basis: 100px;*/
+  flex: 1 0 100px;
+  
+}
+

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.search-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.search-wrapper label {
+  font-size: 3rem;
+}
+
+.search-wrapper input {
+  font-size: 1rem;
+  width: 80%;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: .25rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+}
+
+.card > .header {
+  margin-bottom: .25rem;
+}
+
+.card > .body {
+  font-size: .8rem;
+  color: #777;
+}
+
+.hide  {
+  display: none;
+}
