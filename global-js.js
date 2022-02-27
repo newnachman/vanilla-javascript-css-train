@@ -17,6 +17,7 @@ nav.appendChild(createLinkTag('flexbox-basic', '/flexbox-basic', 'Go to flexbox-
 nav.appendChild(createLinkTag('flexbox-advanced', '/flexbox-advanced', 'Go to flexbox-advanced'));
 nav.appendChild(createLinkTag('toggle-button', '/toggle-button', 'Go to toggle-button'));
 nav.appendChild(createLinkTag('css-variables', '/css-variables', 'Go to css-variables'));
+nav.appendChild(createLinkTag('web-components', '/web-components', 'Go to web-components'));
 
 let body = document.querySelector('body');
 body.prepend(nav);

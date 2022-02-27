@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Component Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="/global-js.js" defer></script>
+    <link rel="stylesheet" href="/global-style.css">
+  </head>
+  <body>
+   
+    <div class="main-container">
+      <h3>user-card-no-shadow</h3>
+      
+      <user-card-no-shadow name="John Doe"></user-card-no-shadow>
+      <user-card-no-shadow name="Johan Doeker"></user-card-no-shadow>
+      <user-card-no-shadow name="jeremy markof"></user-card-no-shadow>
+
+      <p> &#x0002A; Notice that the color orange on h3 tag is from the custom element constructor, but affects all the elements and not encapsulated only inside the specific custom element...</p>
+
+    </div>
+
+    <div class="main-container">
+      <h3>user-card with shadow</h3>
+      <user-card name="John Doe"></user-card>
+      <user-card name="Johan Doeker"></user-card>
+      <user-card name="jeremy markof"></user-card>
+
+      <p> &#x0002A; Notice that now the h3 gets the coral color, but doesn't affect what is outside. the h3 tags that are not inside the shadow dom - are not affected.</p>
+    </div>
+
+    <div class="main-container">
+      <h3>user-card + shadow + advanced features:</h3>
+      <user-card-advanced name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <span slot="email">JohnDoe@bla.com</span>
+        <span slot="phone">0972-00-678-390</span>
+      </user-card-advanced>
+      <user-card-advanced name="Johan Doeker" avatar="https://randomuser.me/api/portraits/men/2.jpg">
+        <span slot="email">JohanDoeker@bla.com</span>
+        <span slot="phone">0972-33-000-365</span>
+      </user-card-advanced>
+      <user-card-advanced name="jeremy markof" avatar="https://randomuser.me/api/portraits/men/3.jpg">
+        <span slot="email">jeremymarkof@bla.com</span>
+        <span slot="phone">0972-00-112-112</span>
+      </user-card-advanced>
+
+      <br>
+      <br>
+      <p> &#x0002A; Notice that...</p>
+    </div>
+    
+  </body>
+</html>
+
